@@ -18,6 +18,7 @@ public class OpenAIConfig {
         return new TokenTextSplitter();
     }
 
+
     @Bean
     public OpenAiApi openAiApi(@Value("${spring.ai.openai.base-url}") String baseUrl, @Value("${spring.ai.openai.api-key}") String apikey) {
         return OpenAiApi.builder()
