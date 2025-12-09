@@ -40,7 +40,6 @@ spring:
     rag:
       embed: nomic-embed-text #nomic-embed-text、text-embedding-ada-002
 
-
 # Redis
 redis:
   sdk:

@@ -15,6 +15,9 @@ spring:
       base-url: https://api.openai-proxy.org
       api-key: sk-k8yjC02DdOCJGxa5GEu6nJT45QxKTkor5KA1dSm4FkMMebbi
       embedding-model: text-embedding-ada-002
+      chat:
+        options:
+          model: gpt-4o
       embedding:
         options:
           num-batch: 1536

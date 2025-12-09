@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/carton/Desktop",
+        "/Users/carton/Desktop"
+      ]
+    },
+    "mcp-server-computer": {
+      "command": "C:\\Users\\Carton\\.jdks\\ms-17.0.17\\bin\\java.exe",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "C:\\Users\\Carton\\.m2\\repository\\cn\\bugstack\\mcp\\mcp-server-computer\\1.0.0\\mcp-server-computer-1.0.0.jar"
+      ]
+    }
+  }
+}
+

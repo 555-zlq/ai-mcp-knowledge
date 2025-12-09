@@ -8,6 +8,7 @@ import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.ai.chat.model.Generation;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
 import org.springframework.ai.document.Document;
@@ -97,8 +98,25 @@ public class OpenAiTest {
 
         stream.subscribe(
                 chatResponse -> {
-                    AssistantMessage output = chatResponse.getResult().getOutput();
-                    log.info("测试结果(stream): {}", JSON.toJSONString(output));
+                    // 1. 获取 Generation 对象并进行 null 检查
+                    Generation generation = chatResponse.getResult();
+
+                    if (generation != null) {
+                        AssistantMessage output = generation.getOutput();
+
+                        // 2. 修正：使用 AssistantMessage 的 getText() 方法获取内容
+                        String content = output.getText();
+
+                        // 3. 检查内容是否非空
+                        if (content != null && !content.isEmpty()) {
+                            // 这里打印每次流式传输过来的文本块
+                            log.info("测试结果(stream): {}", content);
+                        }
+
+                    } else {
+                        // 最后一个块，generation 为 null，表示流结束，忽略。
+                        // System.out.println("流结束块");
+                    }
                 },
                 Throwable::printStackTrace,
                 () -> {
@@ -127,7 +145,7 @@ public class OpenAiTest {
 
     @Test
     public void chat() {
-        String message = "王大瓜今年几岁";
+        String message = "人工智能学科始于哪一年";
 
         String SYSTEM_PROMPT = """
                 Use the information from the DOCUMENTS section to provide accurate answers but act as if you knew this information innately.
