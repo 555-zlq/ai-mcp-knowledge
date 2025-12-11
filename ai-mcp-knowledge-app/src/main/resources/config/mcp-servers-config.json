@@ -5,8 +5,8 @@
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/Users/carton/Desktop",
-        "/Users/carton/Desktop"
+        "/Users/Carton/Desktop",
+        "/Users/Carton/Desktop"
       ]
     },
     "mcp-server-computer": {
