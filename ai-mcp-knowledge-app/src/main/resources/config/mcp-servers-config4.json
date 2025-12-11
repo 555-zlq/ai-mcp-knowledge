@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "mcp-server-csdn": {
+      "command": "C:\\Users\\Carton\\.jdks\\ms-17.0.17\\bin\\java.exe",
+      "args": [
+        "-Dfile.encoding=UTF-8",
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "C:\\Users\\Carton\\.m2\\repository\\cn\\bugstack\\mcp\\mcp-server-csdn\\1.0.0\\mcp-server-csdn-1.0.0.jar",
+        "--csdn.api.categories=Java场景面试宝典",
+        "--csdn.api.cookie=uuid_tt_dd=10_18994036450-1740746128802-662922; fid=20_65857603948-1740746436596-578497; c_dl_um=-; c_dl_prid=1741748582221_574544; c_dl_rid=1742893015760_400961; c_dl_fref=https://so.csdn.net/so/search; c_dl_fpage=/download/qq_36404766/11020351; _ga=GA1.2.718336118.1749562652; _ga_7W1N0GEY1P=GS2.1.s1749737506$o3$g0$t1749737506$j60$l0$h0; p_uid=U010000; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1761051955,1762949140; c_segment=10; c_ab_test=1; dc_sid=d539b4433477e7bf10af03d7e51ce8b4; c_adb=1; vip_auto_popup=1; _clck=urk1a3%5E2%5Eg1r%5E0%5E1885; creative_btn_mp=3; csdn_newcert_[object Object]=1; csdn_newcert_qq_51947427=1; dc_session_id=10_1765457486464.319687; c_first_ref=www.bing.com; c_first_page=https%3A//blog.csdn.net/i042416/article/details/152465483; c_dsid=11_1765457487814.862441; SESSION=eba04a0c-c7ff-4026-9f71-e0324d0a5657; user_page_view_times=1; hide_login=1; loginbox_strategy=%7B%22taskId%22%3A317%2C%22abCheckTime%22%3A1765457859405%2C%22version%22%3A%22ExpA%22%2C%22nickName%22%3A%22qq_51947427%22%7D; _clsk=5umopv%5E1765457859582%5E4%5E0%5Es.clarity.ms%2Fcollect; UserName=RanGemer312; UserInfo=d7364093b4cc4980802ae7d75cde264a; UserToken=d7364093b4cc4980802ae7d75cde264a; UserNick=RanGemer312; AU=357; UN=RanGemer312; BT=1765457963269; tfstk=gr_iQWgUQG-60E3sjSY_beqvz0Ed1FTXvt3vHEp4YpJBH599BsWci_-VWdefmMXhEqpwBGHcmF_dXqpTCEfVeE28ezUR11TBu8e8GnkNkER4kKrpbSMcdzw8ezUd11TXu8Ct0zPhTI9e_IJwgWxe1puZQtJwYvRkNEJV3t8eYQd2_x-Z7BzedI823t84t6JBgEJV3EPhTj-mbLQV4wyv4GnrVfG1-CxMEqpnoqVvshvP_pABOw42jL5wKqyGNz3Mnp_zpkfCEGW9Ot4uKE6C0tRcLvyvfsShKCXTEx9A51QDB1qaB6YDIe7NqjuVtFvNnZ-IIJvP567W8HUzZ67CB1_hMjz29TpF1N80z7TM7d8HOZeI7KjF0NK6lAyJfsShKCYP4uoE484slBPA8miXbBOHey1bHTg3q_hbtWmRGhRBNLF3tmiXbBOHeWVn2stwOQ9R.; c-sidebar-collapse=0; csdn_newcert_RanGemer312=1; c_utm_source=251212_vip_toolbarhyzx_hy; utm_source=251212_vip_toolbarhyzx_hy; log_Id_click=46; log_Id_view=517; c_pref=https%3A//www.csdn.net/%3Fspm%3D1008.2028.3001.4476; c_ref=https%3A//mp.csdn.net/; c_page_id=default; dc_tos=t73w68; log_Id_pv=37"
+      ]
+    },
+    "mcp-server-weixin": {
+      "command": "C:\\Users\\Carton\\.jdks\\ms-17.0.17\\bin\\java.exe",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "C:\\Users\\Carton\\.m2\\repository\\cn\\bugstack\\mcp\\mcp-server-weixin\\1.0.0\\mcp-server-weixin-1.0.0.jar"
+      ]
+    }
+  }
+}

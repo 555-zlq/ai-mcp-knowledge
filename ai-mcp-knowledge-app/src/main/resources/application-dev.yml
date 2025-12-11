@@ -14,7 +14,7 @@ spring:
     mcp:
       client:
         stdio:
-          servers-configuration: classpath:/config/mcp-servers-config3.json
+          servers-configuration: classpath:/config/mcp-servers-config4.json
     openai:
       base-url: https://api.openai-proxy.org
       api-key: sk-k8yjC02DdOCJGxa5GEu6nJT45QxKTkor5KA1dSm4FkMMebbi

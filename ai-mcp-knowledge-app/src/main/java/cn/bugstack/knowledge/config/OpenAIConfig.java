@@ -4,6 +4,8 @@ import io.micrometer.observation.ObservationRegistry;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.DefaultChatClientBuilder;
 import org.springframework.ai.chat.client.observation.ChatClientObservationConvention;
+import org.springframework.ai.chat.memory.ChatMemory;
+import org.springframework.ai.chat.memory.InMemoryChatMemory;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.ai.openai.OpenAiEmbeddingModel;
@@ -76,6 +78,11 @@ public class OpenAIConfig {
                         .model("gpt-4o")
                         .build())
                 .build();
+    }
+
+    @Bean
+    public ChatMemory chatMemory() {
+        return new InMemoryChatMemory();
     }
 
 
