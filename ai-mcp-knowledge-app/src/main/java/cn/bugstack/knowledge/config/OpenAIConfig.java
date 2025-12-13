@@ -75,7 +75,7 @@ public class OpenAIConfig {
         return defaultChatClientBuilder
                 .defaultTools(tools)
                 .defaultOptions(OpenAiChatOptions.builder()
-                        .model("gpt-4o")
+                        .model("gpt-5.2")
                         .build())
                 .build();
     }

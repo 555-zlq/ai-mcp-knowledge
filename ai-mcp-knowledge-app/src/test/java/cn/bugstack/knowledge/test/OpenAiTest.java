@@ -62,9 +62,9 @@ public class OpenAiTest {
     @Test
     public void test_call() {
         ChatResponse response = openAiChatModel.call(new Prompt(
-                "1+1",
+                "你是谁",
                 OpenAiChatOptions.builder()
-                        .model("gpt-4o")
+                        .model("gpt-5.2")
                         .build()));
 
         log.info("测试结果(call):{}", JSON.toJSONString(response));

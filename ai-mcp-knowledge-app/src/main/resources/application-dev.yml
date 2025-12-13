@@ -21,7 +21,7 @@ spring:
       embedding-model: text-embedding-ada-002
       chat:
         options:
-          model: gpt-4o
+          model: gpt-5.2
       embedding:
         options:
           num-batch: 1536
